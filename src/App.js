@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 import {
   Carousel,
   InnerCarousel,
@@ -10,7 +9,7 @@ import images from './images-data';
 function App() {
   return (
     <Carousel>
-      <InnerCarousel>
+      <InnerCarousel drag='x'>
         {images.map((image) => {
           return(
             <ImageCarousel>
