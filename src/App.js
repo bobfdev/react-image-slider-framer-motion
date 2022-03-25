@@ -9,7 +9,10 @@ import images from './images-data';
 function App() {
   return (
     <Carousel>
-      <InnerCarousel drag='x'>
+      <InnerCarousel 
+        drag='x'
+        dragConstraints={{ right: 0 }}
+      >
         {images.map((image) => {
           return(
             <ImageCarousel>
